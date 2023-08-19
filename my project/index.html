@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="images/my-avt.png" type="image/x-icon">
+    <title>AmadIrfan</title>
+    <style>
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo">AI</div>
+        <nav class="navbar ">
+            <ul>
+                <li><a class="active-link" href="#">Home</a></li>
+                <li><a href="#about-section">About</a></li>
+                <li><a href="#edu-section">Education</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="trailing">
+            AI
+        </div>
+        <div class="menu-btn">
+            <div class="bars"></div>
+            <div class="bars"></div>
+            <div class="bars"></div>
+        </div>
+    </header>
+    <section class="design">
+        <div class="dg1"></div>
+        <div class="dg2"></div>
+    </section>
+    <section id="about-section" class="Top-Section p20 section">
+        <div class="name-about">
+            <div class="hello">Hello I'm </div>
+            <div class="name">Amad Irfan</div>
+            <div class="title">Web Developer</div>
+            <div class="about">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed voluptas ratione
+                doloremque consectetur deserunt. Ipsa fugit inventore doloremque rerum odio? Nisi eligendi quam quae
+                alias exercitationem natus veritatis enim fugiat.</div>
+        </div>
+        <div class="img-part">
+            <center>
+
+                <img class="main-img" src="images/my-avt.png" alt="your pick">
+            </center>
+        </div>
+    </section>
+    <section class="edu-sections section" id="edu-section">
+        <div class="section-title">
+            <h2>Education</h2>
+        </div>
+        <div class="section-content">
+            <!-- <div class="section-row"> -->
+            <div class="card">
+                <div class="card-graphic">
+                    <div class="graphic-text">
+                        Intermediate
+                    </div>
+                </div>
+                <div class="card-body">
+
+                    <div class="degree">
+                        Intermediate
+                    </div>
+                    <div class="degree-title">
+                        ICS
+                    </div>
+                    <div class="collage">
+                        <span class="collage-name">
+                            Govt Collage Bhakkar
+                        </span>
+                        <span class="degree-year">
+                            (2019-2021)
+                        </span>
+                    </div>
+                    <div class="Grade">
+                        <span class="Grade-title">
+                            Marks</span>
+                        <span class="Grade-mark">
+                            1095 </span>
+                    </div>
+                    <div class="card-description">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam omnis soluta nulla dolor, vel
+                        cum at temporibus ratione odio rerum autem repellendus ducimus voluptatem doloribus corporis
+                        earum eius et molestiae!
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-graphic">
+                    <div class="graphic-text">
+                        Bachelor
+                    </div>
+                </div>
+                <div class="card-body">
+                    <div class="degree">
+                        Bachelor
+                    </div>
+                    <div class="degree-title">
+                        Computer Science
+                    </div>
+                    <div class="collage">
+                        <span class="collage-name">
+                            UET Lahore
+                        </span>
+                        <span class="degree-year">
+                            (2021-2025)
+                        </span>
+                    </div>
+                    <div class="Grade">
+                        <span class="Grade-title">
+                            CGPA</span>
+                        <span class="Grade-mark">
+                            3.5 </span>
+                    </div>
+                    <div class="card-description">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam omnis soluta nulla dolor, vel
+                        cum at temporibus ratione odio rerum autem repellendus ducimus voluptatem doloribus corporis
+                        earum eius et molestiae!
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="p1">
+            <h1>Amad Irfan </h1>
+        </div>
+        <div class="p2">
+            <h1>Amad Irfan </h1>
+        </div>
+    </footer>
+</body>
+<script>
+    let btn = document.getElementsByClassName('menu-btn')[0];
+    console.log(btn)
+    btn.addEventListener('click', onBtnClick)
+    function onBtnClick(e) {
+        e.preventDefault();
+        let responsive = document.getElementsByClassName('navbar')[0];
+        console.log(responsive)
+        responsive.classList.toggle('active-navbar')
+    }
+</script>
+
+</html>

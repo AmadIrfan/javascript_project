@@ -1,0 +1,97 @@
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Todo App</title>
+		<style>
+			* {
+				padding: 0;
+				margin: 0;
+				box-sizing: border-box;
+			}
+			body {
+				height: 100%;
+				background-color: rgb(169, 83, 255);
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+				justify-items: center;
+			}
+			.main-box {
+				width: 500px;
+				/* height: 500px; */
+				background-color: blueviolet;
+				padding: 10px;
+			}
+			input {
+				width: 100%;
+				padding: 10px;
+				border: none;
+			}
+			.list {
+				margin: 10px 0px;
+			}
+			.list li {
+				color: aliceblue;
+				list-style: none;
+				font-size: 20px;
+				text-align: justify;
+				font-weight: 600;
+				margin: 5px;
+				padding: 10px;
+				-webkit-user-select: none;
+				user-select: none;
+				background-color: red;
+				cursor: pointer;
+				position: relative;
+				font-size: 18px;
+				font-weight: 200;
+			}
+			.list li i {
+				position: absolute;
+				right: 2px;
+				padding-right: 10px;
+			}
+			.done {
+				background-color: rgb(20, 180, 243) !important;
+				text-decoration: line-through;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="main-box">
+			<div class="input-box">
+				<input
+					type="text"
+					placeholder="Write Something here..."
+					name="input-text"
+					id="input-text"
+				/>
+			</div>
+			<div class="items">
+				<ul class="list"></ul>
+			</div>
+		</div>
+	</body>
+	<script>
+		let list = document.getElementsByClassName("list")[0];
+
+		let text = document.getElementById("input-text");
+		text.addEventListener("keyup", (e) => {
+			if (e.key === "Enter") {
+				let li = document.createElement("li");
+				li.classList.add("list-item");
+				let a =
+					(li.innerHTML =
+					innerHTML =
+						`${text.value} <i class="icon"></i`);
+				list.append(li);
+				li.addEventListener("click", (e) => {
+					console.log(this);
+					li.classList.toggle("done");
+				});
+			}
+		});
+	</script>
+</html>

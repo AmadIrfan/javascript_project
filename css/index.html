@@ -1,0 +1,99 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Css properties</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+body{
+    background-color: blueviolet;
+}
+    .container {
+        width: 100%;
+        background-color: red;
+        height: 500px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .box {
+        height: 200px;
+        width: 200px;
+        padding: 50px;
+        background-color: blue;
+        display: flex;
+        flex-direction:wow;
+        justify-content: center;
+        justify-items: center;
+        align-items: center;
+        transition: all 2s ease-in-out;
+        cursor: pointer;
+        border-radius: 20px;
+    }
+
+    .box:hover {
+        /* transform: translate(120px); */
+        /* transform: scale(2); */
+        /* transform: skew(45deg); */
+        /* transform: rotate(1000deg); */
+        background-color: green;
+    }
+
+    .box a {
+        text-decoration: none;
+        color: white;
+        padding: 10px;
+        margin:10px 10px;
+        position: relative;
+        font-size: 20px;
+    }
+
+    .box a::after {
+        content: '';
+        position: absolute;
+        height: 5px;
+        width: 100%;
+        background: white;
+        left: 0;
+        border-radius: 10px;
+        /* z-index: -1; */
+        bottom: -3px;
+        transform-origin: right;
+        transform:scale(0) ;
+        transition: transform 0.5s;
+    }
+    .box a:hover::after{transform-origin: left;
+        transform: scale(1)
+    }
+</style>
+
+<body>
+    <!-- <center> -->
+
+    <!-- <div class="container"> -->
+    <div class="box">
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+    </div>
+    <!-- </div> -->
+    <!-- </center> -->
+</body>
+<script>
+    let box = document.getElementsByClassName('box')[0];
+    box.addEventListener('click', onClick)
+    function onClick(e) {
+        box.style.transform = "translate(120px)";
+    }
+</script>
+
+</html>
