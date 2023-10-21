@@ -54,7 +54,6 @@ function del_logic() {
 	edit.addEventListener("click", editFunc);
 	edit.setAttribute("id", "edit");
 	del.addEventListener("click", (e) => {
-		// console.log(e.target.parentElement);
 		deleteFromLocStorage(e.target);
 		e.target.parentElement.parentElement.remove();
 	});
@@ -70,19 +69,14 @@ function editFunc(e) {
 	let oldVal = item.innerHTML;
 	let newVal = "";
 	if (e.target.innerHTML === "edit") {
-		// console.log("====================================");
 		e.target.innerContext = "Done";
 		e.target.innerHTML = "Done";
-		// console.log(e.target.innerContext);
-		// console.log(e.target.innerHTML);
 		const inputField = document.createElement("input");
 		inputField.type = "text";
 		inputField.classList = "txt-class";
 		inputField.setAttribute("id", "txt-id");
 		inputField.value = oldVal;
 		inputField.placeholder = "Enter edited text";
-		// console.log(inputField);
-		// console.log(editableItem);
 		item.parentElement.replaceChild(inputField, item);
 		// console.log("====================================");
 	} else {
