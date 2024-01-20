@@ -1,0 +1,39 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+h1{
+    text-align: center;
+}
+.form {
+    height: 90vh;
+    background-color: rebeccapurple;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+    justify-self: center;
+}
+label {
+	display: block;
+	font-size: 20px;
+}
+.row {
+	padding: 3px;
+}
+input {
+	padding: 5px;
+	font-size: 15px;
+}
+input[type="text"] ,input[type="number"] {
+	border-radius: 10px;
+    border: 2px solid black;
+}
+input[type="submit"] {
+	background-color: green;
+	color: white;
+	width: 100%;
+	border-radius: 20px;
+	margin: 10px 0px;
+}

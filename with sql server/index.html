@@ -1,0 +1,49 @@
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>add course</title>
+		<link rel="stylesheet" href="./CSS/style.css" />
+	</head>
+	<body>
+		<h1>Add new Course</h1>
+		<div class="form">
+			<form action="http://localhost:3000/lms/p" method="post">
+				<div class="row">
+					<label for="">Name</label>
+					<input type="text" name="name" placeholder="name" id="name" />
+				</div>
+				<div class="row">
+					<label for="description">description</label>
+					<input
+						type="text"
+						name="description"
+						placeholder="description"
+						id="description"
+					/>
+				</div>
+				<div class="row">
+					<label for="courseCode">course Code</label>
+					<input
+						type="text"
+						name="courseCode"
+						placeholder="Course Code"
+						id="courseCode"
+					/>
+				</div>
+				<div class="row">
+					<label for="limitStudent">Limit Student</label>
+					<input
+						type="number"
+						name="limitStudent"
+						placeholder="Students Limit"
+						id="limitStudent"
+					/>
+				</div>
+
+				<input type="submit" value="Submit" />
+			</form>
+		</div>
+	</body>
+	<script src="./js/scrypt.js"></script>
+</html>
